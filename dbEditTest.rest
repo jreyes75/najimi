@@ -1,0 +1,47 @@
+GET http://localhost:3000/api/places
+//Get all database information.
+###
+GET http://localhost:3000/api/places/61a1832904822b963fe2ac8e
+//Get specific information of a place from the database.
+###
+
+POST http://localhost:3000/api/places
+Content-Type: application/json
+
+{
+    "name": "Mitsuwa Marketplace",
+    "category": "Grocery Store",
+    "address": "100 E Algonquin Rd, Arlington Heights, IL 60005",
+    "description": "Mitsuwa Marketplace is a Japanese supermarket chain in America, with locations in California, Illinois, Texas, Hawaii, and New Jersey."
+}
+// Add a place into the najStores database
+###
+
+POST http://localhost:3000/api/places
+Content-Type: application/json
+
+{
+    "name": "Osana Plaza",
+    "category": "Grocery Store",
+    "address": "1527 Bryn Mawr Ave, Chicago, Illinois 60640, USA",
+    "description": "Osana Plaza is Chicagoland's home to Japanese, Chinese, Filipino, and other Asian goods! Located at 527 Bryn Mawr between Lawrence and Delaney, the plaza caters to many local Asian communities, as well as to many others across the Chicagoland area."
+}
+
+//Add a place into the najStores database
+###
+
+POST http://localhost:3000/api/places
+Content-Type: application/json
+
+{
+    "name": "Test Store",
+    "category": "Other",
+    "address": "not a valid address",
+    "description": "test 123"
+}
+
+//Add a place into the najStores database (for deletion)
+###
+DELETE http://localhost:3000/api/places/61a19deccbdf771da43cb670
+
+//Deletes a place from najStores database

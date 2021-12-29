@@ -1,0 +1,43 @@
+<section id="home-heading" class="p-5">
+        <div class="dark-overlay">
+            <div class="row">
+                <div class="col">
+                    <div class="container pt-5">
+                        <img src="img/logo.png" width="420px">
+                        <h1>Businesses/Places</h1>
+                        <p class="d-none d-md-block">
+                            Find all Asian businesses located in the Chicagoland area here!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="main-content">
+    <section id="itemsNajimi" class="py-5">
+        <div class="container">
+            <div class="row">
+                {{# each places }}
+                <div class="col-md-4 mb-4 text-center">
+                    <div class="card" style="width: 18rem;">
+                        <div id="card-item">
+                            <img class="card-img-top" src="{{img}}" alt="item">
+                            <div class="card-body">
+                                <h5 class="card-title">{{name}}</h5>
+                                <h6 class="card-category">{{category}}</h6>
+                                <h7 class="card-address">{{address}}</h7>
+                                <p class="card-description">{{description}}</p>
+                                <section class="special">
+                                    <a href="/places/edit/{{key}}" class="btn btn-warning btn-sm" href="#">Edit</a>
+                                    <a href="/places/delete/{{key}}" class="btn btn-danger btn-sm" onclick="#">Delete</a>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+    </section>
+</section>

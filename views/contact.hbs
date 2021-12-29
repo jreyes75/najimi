@@ -1,0 +1,42 @@
+<section id="contact-heading" class="p-5">
+        <div class="dark-overlay">
+            <div class="row">
+                <div class="col">
+                    <div class="container pt-5">
+                        <img src="img/logo.png" width="420px">
+                        <h1>Contact</h1>
+                        <p class="d-none d-md-block">
+                            Want to know about our service? Have any technical issues? Fill out our contact form below, and we'll get back to you within 2-4 business days.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+<form id="contactForm">
+        <h2>Contact Us</h2>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Name</label>
+            <input type="text" class="form-control" id="nameInput" aria-describedby="textHelp" placeholder="June Park">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email Address</label>
+            <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="jpark@najimi.com">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlSelect2">Select your Inquiry:</label>
+            <select multiple class="form-control" id="exampleFormControlSelect2">
+                <option value="General Inquiry">General Inquiry</option>
+                <option value="Technical Issues">Technical Issues</option>
+                <option value="Wrong Business Information">Wrong Business Information</option>
+                <option value="Business Inquiry">Business Inquiry</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+        <p>Write a message:</p>
+        <div class="input-group">
+            <textarea class="form-control" aria-label="With textarea"></textarea>
+        </div>
+        <button type="submit" class="btn btn-secondary" onclick="confirmContact.html">Submit</button>
+    </form>

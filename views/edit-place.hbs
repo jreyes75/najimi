@@ -1,0 +1,68 @@
+<section class="placeForm">
+  <h1>Add Business/Place</h1>
+<div class="container">
+<form method="GET">
+  <div class="mb-3">
+    <label for="place-key" class="form-label">Key</label>
+    <input type="text"
+        class="form-control"
+        id="place-key"
+        name="key"
+        {{# if edit}}
+        disabled
+        value="{{place.key}}"
+        {{/if}} >
+  </div>
+
+  <div class="mb-3">
+    <label for="place-img" class="form-label">Image (URL only)</label>
+    <input type="text"
+        class="form-control"
+        id="place-img"
+        name="img"
+        value="{{place.name}}">
+  </div>
+
+  <div class="mb-3">
+    <label for="place-name" class="form-label">Name</label>
+    <input type="text"
+        class="form-control"
+        id="place-name"
+        name="name"
+        value="{{place.name}}">
+  </div>
+
+  <div class="mb-3">
+    <label for="place-category" class="form-label">Category</label>
+    <input type="text"
+        class="form-control"
+        id="place-category"
+        name="category"
+        value="{{place.category}}">
+
+  <div class="mb-3">
+    <label for="place-address" class="form-label">Address</label>
+    <input type="text"
+        class="form-control"
+        id="place-address"
+        name="address"
+        value="{{place.address}}">
+
+  <div class="mb-3">
+    <label for="place-description" class="form-label">Description</label>
+    <textarea class="form-control"
+        id="place-description"
+        rows="3"
+        name="description">{{place.description}}</textarea>
+  </div>
+
+  <button type="submit" class="btn btn-primary mb-3">
+    {{#if edit}}
+      Save
+    {{else}}
+        Create
+    {{/if}}
+    </button>
+</form>
+</div>
+</section>
